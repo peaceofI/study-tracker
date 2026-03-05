@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Core — AI Study OS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="noise"></div>
+    <div class="gradient-bg"></div>
+
+    <div class="app">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="logo">
+                <div class="logo-icon"><i class="fas fa-brain"></i></div>
+                <span class="logo-text">Study<span>Core</span></span>
+            </div>
+            <div class="nav-items">
+                <div class="nav-item active" data-tab="dashboard"><i class="fas fa-home"></i><span>Dashboard</span></div>
+                <div class="nav-item" data-tab="calendar"><i class="fas fa-calendar-alt"></i><span>Planner</span></div>
+                <div class="nav-item" data-tab="books"><i class="fas fa-book-open"></i><span>Books</span></div>
+                <div class="nav-item" data-tab="notes"><i class="fas fa-sticky-note"></i><span>Notes</span></div>
+                <div class="nav-item" data-tab="flashcards"><i class="fas fa-brain"></i><span>Flashcards</span></div>
+            </div>
+            <div class="sidebar-footer">
+                <div class="streak" id="streakDisplay"><i class="fas fa-fire"></i> <span>0</span></div>
+                <div class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></div>
+            </div>
+        </nav>
+
+        <!-- Main content -->
+        <main class="main-content" id="mainContent">
+            <!-- Tabs will be injected by JS -->
+        </main>
+    </div>
+
+    <!-- Modals container -->
+    <div id="modalContainer"></div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
