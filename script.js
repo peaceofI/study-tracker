@@ -43,6 +43,11 @@ function loadTab(tab) {
     }
 }
 
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("service-worker.js")
+  .then(() => console.log("Service Worker Registered"));
+}
+
 function setupThemeToggle() {
     const toggle = document.getElementById('themeToggle');
     toggle.addEventListener('click', () => {
